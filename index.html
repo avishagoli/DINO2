@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DINO - משחק</title>
+    <meta name="description" content="DINO" />
+    <meta name="keywords" content="דינו, משחק לימודי, אבישג אוליאל, דנה מלח, זיו פדידה" />
+    <meta name="author" content="Avishag Oliel, Dana Malach, Ziv Fadida" />
+    <link rel="shortcut icon" type="image/png" href="images/dino-LOGO.png">
+    <!-- CSS -->
+
+    <link href="./styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="./jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="./jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="./index.html">
+                <img id="logo" src="images/dino-LOGO1.png" /> <!--הלוגו של המשחק שלכם-->
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                    <li><a class="about">אודות</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <span class="close-about-holder">
+                <a class="closeAbout close-btn">X</a>
+            </span>
+
+            <p id="about">
+                <div class="key">
+                    <img class="imgKey" src="images/about.png" />
+                </div>
+
+                <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+            </p>
+            <div id="hitDiv">
+                <img id="logoHit" src="images/HIT-logo.png" alt="hit logo" />
+            </div>
+
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+
+            <span class="close-about-holder">
+                <a class="closeHowToPlay close-btn">X</a>
+            </span>
+            <div class="key">
+                <img class="imgKey" src="images/popupIns.png" />
+
+            </div>
+
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="./Dino.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+        
+</body>
+
+</html>
